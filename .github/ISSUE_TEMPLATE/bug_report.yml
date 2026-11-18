@@ -1,0 +1,23 @@
+name: Bug report
+description: Report a reproducible software problem
+body:
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Include a command or small synthetic example. Remove private data.
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: OS, Python version, Node.js version, commit
+    validations:
+      required: true

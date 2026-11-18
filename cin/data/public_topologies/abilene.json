@@ -1,0 +1,14 @@
+{
+  "name": "Abilene",
+  "collection": "Internet Topology Zoo via TopoHub",
+  "source_kind": "public measured/curated underlay topology",
+  "source_url": "https://github.com/piotrjurkiewicz/topohub/blob/master/data/topozoo/Abilene.json",
+  "source_doi": "10.1016/j.softx.2023.101540",
+  "nodes": [
+    {"id":"0","label":"New York"},{"id":"1","label":"Chicago"},{"id":"2","label":"Washington DC"},
+    {"id":"3","label":"Seattle"},{"id":"4","label":"Sunnyvale"},{"id":"5","label":"Los Angeles"},
+    {"id":"6","label":"Denver"},{"id":"7","label":"Kansas City"},{"id":"8","label":"Houston"},
+    {"id":"9","label":"Atlanta"},{"id":"10","label":"Indianapolis"}
+  ],
+  "undirected_edges": [["0","1"],["0","2"],["1","10"],["2","9"],["3","4"],["3","6"],["4","5"],["4","6"],["5","8"],["6","7"],["7","8"],["7","10"],["8","9"],["9","10"]]
+}
