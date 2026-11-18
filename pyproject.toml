@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "certified-intervention-networks"
+version = "0.1.0"
+description = "Replayable admission control for service-preserving directed graph interventions"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+authors = [{name = "Ali Alfatemi"}]
+keywords = ["graph-verification", "network-security", "reachability", "admission-control"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Security",
+  "Topic :: Scientific/Engineering",
+]
+dependencies = [
+  "networkx>=3.6",
+  "numpy>=2.3",
+  "pandas>=2.2",
+  "matplotlib>=3.10",
+  "PyYAML>=6.0",
+  "scipy>=1.17",
+  "scikit-learn>=1.8",
+  "cryptography>=46.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=9.0", "build>=1.2"]
+
+[project.urls]
+Repository = "https://github.com/AliAlfatemi/certified-intervention-networks"
+Issues = "https://github.com/AliAlfatemi/certified-intervention-networks/issues"
+
+[tool.setuptools.packages.find]
+include = ["cin", "cin.*"]
+namespaces = true
+
+[tool.setuptools.package-data]
+cin = ["data/public_topologies/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
