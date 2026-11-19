@@ -118,10 +118,6 @@ python run_all.py --quick --seeds 1 --jobs 1 \
   --output outputs/quick --no-paper-figures --require-empty-output
 ```
 
-Generated outputs stay in ignored directories. This repository distributes
-source code, tests, documentation, and one small attributed topology fixture;
-it does not include experiment results, trained models, or manuscript files.
-
 ## Project layout
 
 ```text

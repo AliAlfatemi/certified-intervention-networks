@@ -23,11 +23,10 @@ regression test covering both valid and invalid inputs. Preserve deterministic
 behavior and the distinction between proposal transformation and verification.
 Tests should construct their own inputs or use temporary directories.
 
-## Repository contents
+## Fixtures and validation
 
-Keep experiment output under `outputs/`. Do not commit result tables, generated
-bundles, model checkpoints, manuscript files, credentials, private topology
-data, virtual environments, or caches. Retain attribution for any new fixture.
+Use deterministic synthetic fixtures and temporary directories in tests.
+Retain attribution for any new fixture.
 
 Run `python -m pytest -q`, `python scripts/run_smoke_test.py`, and
 `python -m build` before submitting a change. CI runs the self-contained suite
